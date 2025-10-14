@@ -1,5 +1,4 @@
 
-
 ### 1.1 Ajax简介
 
 -   Ajax全称为Asynchronous Javascript And XML，即异步JS和XML

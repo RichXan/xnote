@@ -85,25 +85,21 @@ dv.paragraph(text);
 
 ![[WorkLog/Paramita/Weekly/<%moment(tp.file.title).format("gggg-[W]WW")%>#Goals for this week:]]
 
-> [!todo]- Tasks of today
-
+## Today's Tasks
  - [ ] 30 new words
  - [ ] 
  - [ ] 
 
-> [!tip] What am I grateful for? 
+## What am I grateful for? 
 > Things you are grateful for, things you feel happy about
-
 -  Gratitude:: 
 
-> [!tip] Unhappy of the day?
+## Unhappy of the day?
 > What makes you unhappy today
-
 - 
 
-> [!tip] What is your inner thoughts today? 
+## What is your inner thoughts today? 
 > Today's inner thoughts
-
 - Learning:: 
 
 > [!note]- Files created on this day

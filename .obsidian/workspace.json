@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "bb1443273ebe3a6d",
+        "id": "73cf96b63ed21641",
         "type": "tabs",
         "children": [
           {
-            "id": "e4b79c69ba75a26b",
+            "id": "15fbcac6470fa985",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "WorkLog/Paramita/Monthly/2025-10.md",
+                "file": "WorkLog/Paramita/Daily/2025-10-14.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2025-10"
+              "title": "2025-10-14"
             }
           }
         ]
@@ -78,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 493.5
+    "width": 302.5
   },
   "right": {
     "id": "58616c5cb492ab02",
@@ -157,8 +157,8 @@
             "state": {
               "type": "calendar",
               "state": {},
-              "icon": "lucide-ghost",
-              "title": "calendar"
+              "icon": "calendar-with-checkmark",
+              "title": "Calendar"
             }
           }
         ],
@@ -170,8 +170,6 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "daily-notes:Open today's daily note": false,
-      "daily-notes:Open today's daily note": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
@@ -179,50 +177,51 @@
       "command-palette:Open command palette": false,
       "bases:Create new base": false,
       "templater-obsidian:Templater": false,
-      "periodic-notes:Open today": false,
-      "copilot:Open Copilot Chat": false
+      "copilot:Open Copilot Chat": false,
+      "periodic-notes:Open today": false
     }
   },
-  "active": "e4b79c69ba75a26b",
+  "active": "15fbcac6470fa985",
   "lastOpenFiles": [
-    "WorkLog/Paramita/Weekly/2025-W42.md",
-    "WorkLog/Paramita/Yearly/2025.md",
-    "WorkLog/Paramita/Daily/2025-10-14.md",
     "WorkLog/Paramita/Monthly/2025-10.md",
-    "Extra/Templates/Monthly Template.md",
-    "Extra/Templates/Quarterly Template.md",
-    "Extra/Templates/Yearly Template.md",
-    "Extra/Templates/Weekly Template.md",
+    "WorkLog/Paramita/Yearly/2025.md",
+    "WorkLog/Paramita/Weekly/2025-W42.md",
+    "WorkLog/Paramita/Daily/2025-10-14.md",
     "Extra/Templates/Daily Template.md",
-    "Extra/Templates/README.md",
-    "WorkLog/Paramita/Quarterly/2025-Q4.md",
-    "KnowledgeSystem/test.md",
-    "Extra/Templates/filename_template.md",
     "Extra/Templates/Default 1.md",
-    "Extra/Templates/Zotero template.md",
-    "copilot/copilot-custom-prompts/Rewrite as tweet thread.md",
-    "copilot/copilot-custom-prompts/Rewrite as tweet.md",
-    "copilot/copilot-custom-prompts/Remove URLs.md",
-    "copilot/copilot-custom-prompts/Generate glossary.md",
-    "copilot/copilot-custom-prompts/Generate table of contents.md",
-    "copilot/copilot-custom-prompts/Make longer.md",
-    "copilot/copilot-custom-prompts/Make shorter.md",
-    "copilot/copilot-custom-prompts/Emojify.md",
-    "copilot/copilot-custom-prompts/Explain like I am 5.md",
-    "copilot/copilot-custom-prompts/Simplify.md",
-    "copilot/copilot-custom-prompts/Summarize.md",
+    "WorkLog/Oazon/daily.md",
+    "WorkLog/DigiFinance/daily.md",
+    "WorkLog/Oazon/weekly.md",
+    "WorkLog/Oazon/swot.md",
+    "WorkLog/Oazon/note/服务器使用gitlab仓库部署服务.md",
+    "WorkLog/Oazon/note/接入aleax.md",
+    "WorkLog/Oazon/note",
+    "WorkLog/Ozone/note/服务器使用gitlab仓库部署服务.md",
+    "WorkLog/Ozone/note/接入aleax.md",
+    "WorkLog/Ozone/swot.md",
+    "WorkLog/Ozone/weekly.md",
+    "WorkLog/Ozone/note",
+    "WorkLog/Ozone/daily.md",
+    "WorkLog/Ozone",
+    "WorkLog/DigiFinance",
+    "KnowledgeSystem/FinancialManage/book/【股票大作手回忆录  珍藏版】(高清)丨baiyunju.cc.pdf",
+    "KnowledgeSystem/FinancialManage/StockMarket/市盈率.md",
+    "KnowledgeSystem/FinancialManage/StockMarket/link.md",
+    "KnowledgeSystem/FinancialManage/StockMarket/gold.md",
+    "KnowledgeSystem/FinancialManage/BitCycle/链游经济.md",
+    "KnowledgeSystem/FinancialManage/BitCycle/股票大作手回忆录.md",
+    "KnowledgeSystem/FinancialManage/BitCycle/基本知识.md",
+    "KnowledgeSystem/FinancialManage/BitCycle/川沐.md",
+    "KnowledgeSystem/FinancialManage/BitCycle/交易所.md",
+    "KnowledgeSystem/FinancialManage/BitCycle/image.png",
+    "KnowledgeSystem/FinancialManage/StockMarket",
+    "KnowledgeSystem/FinancialManage/book",
+    "KnowledgeSystem/FinancialManage/BitCycle",
+    "KnowledgeSystem/FinancialManage",
+    "KnowledgeSystem/CS/Operations/网络编程.md",
     "copilot/copilot-custom-prompts",
-    "copilot",
-    "Journal/Monthly",
-    "Journal",
-    "WorkLog/Paramita/Quarterly",
-    "Journal/Daily",
     "logo.png",
     "8d21cffd94f23a1051c1f01d5ffc1203.png",
-    "Extra/mulfok-periodic-note-templates",
-    "WorkLog/Paramita/2025/Daily",
-    "WorkLog/Paramita/2025",
-    "WorkLog/Paramita/Yearly",
     "WorkLog/daily-template.canvas"
   ]
 }
