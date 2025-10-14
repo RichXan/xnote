@@ -57,9 +57,8 @@ for (let day = 0; day < 7; day++) {
 
 ---
 ## Goals for this week:
-1. 
-2. 
-3. 
+- [ ] 健身
+- [ ] 产品
 
 ## Overview
 ```dataview

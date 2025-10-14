@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "73cf96b63ed21641",
+        "id": "6f842b2eab1d2ab4",
         "type": "tabs",
         "children": [
           {
-            "id": "15fbcac6470fa985",
+            "id": "e9fe802eea2956d0",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -53,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "🙏",
+                "query": "",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Extra/Templates/Daily Template.md",
+                "file": "WorkLog/Paramita/Daily/2025-10-14.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Daily Template"
+              "title": "Backlinks for 2025-10-14"
             }
           },
           {
@@ -113,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "WorkLog/Paramita/Monthly/2025-10.md",
+                "file": "WorkLog/Paramita/Daily/2025-10-14.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from 2025-10"
+              "title": "Outgoing links from 2025-10-14"
             }
           },
           {
@@ -142,13 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "WorkLog/Paramita/Monthly/2025-10.md",
+                "file": "WorkLog/Paramita/Daily/2025-10-14.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 2025-10"
+              "title": "Outline of 2025-10-14"
             }
           },
           {
@@ -161,8 +161,7 @@
               "title": "Calendar"
             }
           }
-        ],
-        "currentTab": 4
+        ]
       }
     ],
     "direction": "horizontal",
@@ -181,14 +180,24 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "15fbcac6470fa985",
+  "active": "e9fe802eea2956d0",
   "lastOpenFiles": [
-    "WorkLog/Paramita/Monthly/2025-10.md",
-    "WorkLog/Paramita/Yearly/2025.md",
     "WorkLog/Paramita/Weekly/2025-W42.md",
     "WorkLog/Paramita/Daily/2025-10-14.md",
+    "WorkLog/Paramita/Quarterly/2025-Q4.md",
     "Extra/Templates/Daily Template.md",
+    "Extra/Templates/Zotero template.md",
+    "Extra/Templates/Yearly Template.md",
+    "Extra/Templates/Weekly Template.md",
+    "Extra/Templates/README.md",
+    "Extra/Templates/Quarterly Template.md",
+    "Extra/Templates/Monthly Template.md",
+    "Extra/Templates/filename_template.md",
     "Extra/Templates/Default 1.md",
+    "WorkLog/Paramita/Monthly/2025-10.md",
+    "WorkLog/Paramita/Yearly/2025.md",
+    "WorkLog/Paramita/Yearly/Invalid date.md",
+    "WorkLog/Paramita/Quarterly",
     "WorkLog/Oazon/daily.md",
     "WorkLog/DigiFinance/daily.md",
     "WorkLog/Oazon/weekly.md",
@@ -205,21 +214,11 @@
     "WorkLog/Ozone",
     "WorkLog/DigiFinance",
     "KnowledgeSystem/FinancialManage/book/【股票大作手回忆录  珍藏版】(高清)丨baiyunju.cc.pdf",
-    "KnowledgeSystem/FinancialManage/StockMarket/市盈率.md",
-    "KnowledgeSystem/FinancialManage/StockMarket/link.md",
-    "KnowledgeSystem/FinancialManage/StockMarket/gold.md",
-    "KnowledgeSystem/FinancialManage/BitCycle/链游经济.md",
-    "KnowledgeSystem/FinancialManage/BitCycle/股票大作手回忆录.md",
-    "KnowledgeSystem/FinancialManage/BitCycle/基本知识.md",
-    "KnowledgeSystem/FinancialManage/BitCycle/川沐.md",
-    "KnowledgeSystem/FinancialManage/BitCycle/交易所.md",
     "KnowledgeSystem/FinancialManage/BitCycle/image.png",
     "KnowledgeSystem/FinancialManage/StockMarket",
     "KnowledgeSystem/FinancialManage/book",
     "KnowledgeSystem/FinancialManage/BitCycle",
     "KnowledgeSystem/FinancialManage",
-    "KnowledgeSystem/CS/Operations/网络编程.md",
-    "copilot/copilot-custom-prompts",
     "logo.png",
     "8d21cffd94f23a1051c1f01d5ffc1203.png",
     "WorkLog/daily-template.canvas"

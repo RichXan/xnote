@@ -31,8 +31,8 @@ month.subtract(1, 'weeks');
 
 ---
 ## Goals for this month:
-1. 
-2. 
+- [ ] 健身
+- [ ] 产品
 
 ---
 ## Overview

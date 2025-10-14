@@ -17,4 +17,6 @@ quarter.subtract(1, 'quarters');
 tR += '[[' + quarter.format('YYYY-MM|MMMM') + ']] - ';
 tR += '[[' + quarter.add(1, 'months').format('YYYY-MM|MMMM') + ']] - ';
 tR += '[[' + quarter.add(1, 'months').format('YYYY-MM|MMMM') + ']]';
+tR += '\n';
+tR += '![[WorkLog/Paramita/Yearly/' + quarter.format("YYYY") + '#Goals for this year:]]';
 %>

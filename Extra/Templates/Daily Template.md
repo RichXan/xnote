@@ -32,6 +32,30 @@ tR += '[[' + titleDate.add(1, 'days').format('YYYY-MM-DD') + ']] ❯';
 titleDate.subtract(1, 'days');
 %>
 
+![[WorkLog/Paramita/Weekly/<%moment(tp.file.title).format("gggg-[W]WW")%>#Goals for this week:]]
+
+## Today's Tasks
+ - [ ] 30 new words
+ - [ ] 
+ - [ ] 
+
+## What am I grateful for? 
+> Things you are grateful for, things you feel happy about
+-  Gratitude:: 
+
+## Unhappy of the day?
+> What makes you unhappy today
+- 
+
+## What is your inner thoughts today? 
+> Today's inner thoughts
+- Learning:: 
+
+> [!note]- Files created on this day
+>```dataview  
+>LIST WHERE file.cday = date(this.file.name)
+>```
+
 ```dataview
 table without id
 	mood AS "🌄",
@@ -81,29 +105,5 @@ if (!text) text = "No gratitude or learning entries found yet.";
 
 dv.paragraph(text);
 ```
+
 <% tp.web.daily_quote() %>
-
-![[WorkLog/Paramita/Weekly/<%moment(tp.file.title).format("gggg-[W]WW")%>#Goals for this week:]]
-
-## Today's Tasks
- - [ ] 30 new words
- - [ ] 
- - [ ] 
-
-## What am I grateful for? 
-> Things you are grateful for, things you feel happy about
--  Gratitude:: 
-
-## Unhappy of the day?
-> What makes you unhappy today
-- 
-
-## What is your inner thoughts today? 
-> Today's inner thoughts
-- Learning:: 
-
-> [!note]- Files created on this day
->```dataview  
->LIST WHERE file.cday = date(this.file.name)
->```
-
