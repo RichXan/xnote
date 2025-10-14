@@ -1,6 +1,4 @@
 <%*
-await tp.file.move(`Journal/Yearly/${tp.file.title}`);
-
 let year = moment(tp.file.title);
 
 // # 2023
@@ -46,7 +44,7 @@ const calendarData = {
     entries: []
 }
 
-for(let page of dv.pages('"Journal/Daily"').where(p=>p.exercise)){
+for(let page of dv.pages('"WorkLog/Paramita/Daily"').where(p=>p.exercise)){
     calendarData.entries.push({
         date: page.file.name,
         intensity: page.exercise
@@ -55,92 +53,6 @@ for(let page of dv.pages('"Journal/Daily"').where(p=>p.exercise)){
 }
 
 renderHeatmapCalendar(this.container, calendarData)
-```
-
-```dataviewjs
-dv.span("** Meditation 🧘‍♂️ **")
-
-const currentYear = Number(dv.current().file.name.match(/\d{4}/)?.[0]);
-
-const calendarData = {
-    year: currentYear,
-    colors: {
-        blue: ["#03b6fc"]
-    },
-    entries: []
-}
-
-for(let page of dv.pages('"Journal/Daily"').where(p=>p.meditation)){
-    calendarData.entries.push({
-        date: page.file.name,
-        intensity: page.meditation
-    })
-       
-}
-renderHeatmapCalendar(this.container, calendarData)
-```
-```dataviewjs  
-dv.span("**Sleep Log**")  
-  
-// Extract the year from the current file name 
-const currentYear = dv.current().file.name.match(/\d{4}/)?.[0]; 
-// Filter pages to include only those that match the current year
-const pages = dv.pages('"Journal/Daily"') .where(p => p.file.name.includes(currentYear)) .sort(p => p.file.name); 
-const dates = pages.map(p => p.file.name).values  
-const sleeps = pages.map(p => p.sleep).values  
-  
-const chartData = {  
-type: 'line',  
-data: {  
-labels: dates,  
-datasets: [{  
-label: 'Sleep',  
-data: sleeps,  
-backgroundColor: [  
-'rgba(53, 252, 167, 1)'  
-],  
-borderColor: [  
-'rgba(138, 102, 204, 0.8)'  
-],  
-borderWidth: 1.5,  
-spanGaps: true,  
-}],  
-},  
-};  
-window.renderChart(chartData, this.container)  
-```
-
-```dataviewjs  
-dv.span("**Weight Log**")  
-  
-// Extract the year from the current file name 
-const currentYear = dv.current().file.name.match(/\d{4}/)?.[0]; 
-// Filter pages to include only those that match the current year
-const pages = dv.pages('"Journal/Daily"') .where(p => p.file.name.includes(currentYear)) .sort(p => p.file.name); 
-const dates = pages.map(p => p.file.name).values  
-const weights = pages.map(p => p.weight).values  
-  
-const chartData = {  
-type: 'line',  
-data: {  
-labels: dates,  
-datasets: [{  
-label: 'Weight',  
-data: weights,  
-backgroundColor: [  
-'rgba(53, 252, 167, 1)'  
-],  
-borderColor: [  
-'rgba(138, 102, 204, 0.8)'  
-],
-chartColor: ['rgba(255, 255, 255, 1)'],
-borderWidth: 1.5,  
-spanGaps: true,  
-}],  
-},  
-};  
-  
-window.renderChart(chartData, this.container)  
 ```
 
 ```dataviewjs
@@ -172,7 +84,7 @@ const calendarData = {
     entries: [] // populated in the DataviewJS loop below
 }
 
-for(let page of dv.pages('"Journal/Daily"').where(p=>p.mood)){ 
+for(let page of dv.pages('"WorkLog/Paramita/Daily"').where(p=>p.mood)){ 
 
     calendarData.entries.push({
         date: page.file.name, 
@@ -184,44 +96,95 @@ renderHeatmapCalendar(this.container, calendarData)
 ```
 
 ```dataviewjs
-dv.span("** Prayer 🙏 **")
+dv.span("** Meditation 🧘‍♂️ **")
 
 const currentYear = Number(dv.current().file.name.match(/\d{4}/)?.[0]);
 
 const calendarData = {
     year: currentYear,
     colors: {
-        oldGithubGreen11:[
-            "hsl(65, 83%, 88%)",
-            "hsl(70, 77%, 78%)",
-            "hsl(80, 62%, 72%)",
-            "hsl(95, 52%, 66%)",
-            "hsl(112, 45%, 61%)",
-            "hsl(125, 43%, 56%)",
-            "hsl(132, 41%, 49%)",
-            "hsl(132, 45%, 43%)",
-            "hsl(132, 49%, 36%)",
-            "hsl(132, 54%, 29%)", 
-            "hsl(132, 59%, 24%)",
-        ]
+        blue: ["#03b6fc"]
     },
     entries: []
 }
 
-for(let page of dv.pages('"Journal/Daily"').where(p=>p.prayer)){
+for(let page of dv.pages('"WorkLog/Paramita/Daily"').where(p=>p.meditation)){
     calendarData.entries.push({
         date: page.file.name,
-        intensity: page.prayer
+        intensity: page.meditation
     })
        
 }
-
 renderHeatmapCalendar(this.container, calendarData)
 ```
+```dataviewjs  
+dv.span("**Sleep Log**")  
+  
+// Extract the year from the current file name 
+const currentYear = dv.current().file.name.match(/\d{4}/)?.[0]; 
+// Filter pages to include only those that match the current year
+const pages = dv.pages('"WorkLog/Paramita/Daily"') .where(p => p.file.name.includes(currentYear)) .sort(p => p.file.name); 
+const dates = pages.map(p => p.file.name).values  
+const sleeps = pages.map(p => p.sleep).values  
+  
+const chartData = {  
+type: 'line',  
+data: {  
+labels: dates,  
+datasets: [{  
+label: 'Sleep',  
+data: sleeps,  
+backgroundColor: [  
+'rgba(53, 252, 167, 1)'  
+],  
+borderColor: [  
+'rgba(138, 102, 204, 0.8)'  
+],  
+borderWidth: 1.5,  
+spanGaps: true,  
+}],  
+},  
+};  
+window.renderChart(chartData, this.container)  
+```
+
+```dataviewjs  
+dv.span("**Weight Log**")  
+  
+// Extract the year from the current file name 
+const currentYear = dv.current().file.name.match(/\d{4}/)?.[0]; 
+// Filter pages to include only those that match the current year
+const pages = dv.pages('"WorkLog/Paramita/Daily"') .where(p => p.file.name.includes(currentYear)) .sort(p => p.file.name); 
+const dates = pages.map(p => p.file.name).values  
+const weights = pages.map(p => p.weight).values  
+  
+const chartData = {  
+type: 'line',  
+data: {  
+labels: dates,  
+datasets: [{  
+label: 'Weight',  
+data: weights,  
+backgroundColor: [  
+'rgba(53, 252, 167, 1)'  
+],  
+borderColor: [  
+'rgba(138, 102, 204, 0.8)'  
+],
+chartColor: ['rgba(255, 255, 255, 1)'],
+borderWidth: 1.5,  
+spanGaps: true,  
+}],  
+},  
+};  
+  
+window.renderChart(chartData, this.container)  
+```
+
 
 ```dataview
 TABLE aliases
-FROM "Journal/Weekly"
+FROM "WorkLog/Paramita/Weekly"
 WHERE aliases != null
 where length(aliases) > 1
 where file.day.year = 2023
@@ -229,7 +192,7 @@ where file.day.year = 2023
 
 ```dataview
 TABLE aliases
-FROM "Journal/Daily"
+FROM "WorkLog/Paramita/Daily"
 WHERE aliases != null
 where length(aliases) > 1
 where file.day.year = 2023

@@ -1,13 +1,11 @@
 ---
-Location:
 Tags: weeklyreviews
+Location:
 Aliases:
 Enjoyment:
 Date: <%moment(tp.file.title).startOf('isoWeek').format("YYYY-MM-DD") %>
 ---
 <%*
-await tp.file.move(`Journal/Weekly/${tp.file.title}`);
-
 let weekMoment = moment(tp.file.title);
 
 // # 2023 Week 1
@@ -54,7 +52,8 @@ for (let day = 0; day < 7; day++) {
 %>
 # <%moment(tp.file.title).startOf('isoWeek').format("MMM DD") %> - <%moment(tp.file.title).endOf('isoWeek').format("MMM DD") %> 
 
-![[Journal/Monthly/<%moment(tp.file.title).format("YYYY-MM")%>#Goals for this month:]]
+![[WorkLog/Paramita/Monthly/<%moment(tp.file.title).format("YYYY-MM")%>#Goals for this month:]]
+
 
 ---
 ## Goals for this week:
@@ -66,14 +65,12 @@ for (let day = 0; day < 7; day++) {
 ```dataview
 table without id
 	file.link AS "Date",
-	mood + " #_/habits" AS "🌄",
+	mood AS "🌄",
 	sleep AS "🛌",
-	prayer AS "🙏",
 	choice(meditation,"✅","❌") AS "🧘‍♂️",
-	choice(exercise,"✅","❌") AS "🏃‍♂️",
-	choice(study,"✅","❌") AS "📚", 
-	choice(stretch,"✅","❌") AS "🤸"
-from "Journal/Daily"
+	choice(exercise,"✅","❌") AS "💪",
+	choice(study,"✅","❌") AS "📚"
+from "WorkLog/Paramita/Daily"
 where week = "<% moment(tp.file.title).format("gggg-[W]ww")%>"
 sort file.name ASC
 ```

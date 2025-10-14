@@ -1,0 +1,23 @@
+[href="#_/habits"] {
+    display: none;
+}
+
+table:has([href="#_/habits"]) {
+    & tr > th,
+    & tr > td {
+       max-width: 40px;
+        min-width: 40px;
+        width: 40px;
+        padding: 0px;
+        margin: 0px;
+    }
+
+    & tr > td {
+        padding-left: 1.5px;
+        padding-right: 1.5x;
+        text-align: left;
+    }
+    & tr > td:first-child {
+        min-width: 5px;
+        max-width: inherit;
+    }

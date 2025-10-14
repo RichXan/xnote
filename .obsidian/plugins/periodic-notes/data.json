@@ -1,0 +1,35 @@
+{
+  "showGettingStartedBanner": true,
+  "hasMigratedDailyNoteSettings": false,
+  "hasMigratedWeeklyNoteSettings": false,
+  "daily": {
+    "format": "",
+    "template": "Extra/Templates/Daily Template.md",
+    "folder": "WorkLog/Paramita/Daily",
+    "enabled": true
+  },
+  "weekly": {
+    "format": "",
+    "template": "Extra/Templates/Weekly Template.md",
+    "folder": "WorkLog/Paramita/Weekly",
+    "enabled": true
+  },
+  "monthly": {
+    "format": "",
+    "template": "Extra/Templates/Monthly Template.md",
+    "folder": "WorkLog/Paramita/Monthly",
+    "enabled": true
+  },
+  "quarterly": {
+    "format": "",
+    "template": "Extra/Templates/Quarterly Template.md",
+    "folder": "WorkLog/Paramita/Quarterly",
+    "enabled": true
+  },
+  "yearly": {
+    "format": "",
+    "template": "Extra/Templates/Yearly Template.md",
+    "folder": "WorkLog/Paramita/Yearly",
+    "enabled": true
+  }
+}

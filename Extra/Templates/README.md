@@ -1,0 +1,1 @@
+daily template from  -->  [Obsidian Guide: Daily, Weekly, Monthly and Yearly notes · Vault of Josh](https://vaultofjosh.com/blog/obsidian-periodic-notes/)

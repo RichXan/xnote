@@ -1,18 +1,16 @@
 ---
+tag:
+  - Daily
 week: <% moment(tp.file.title, "YYYY-MM-DD").format("gggg-[W]WW") %>
 weekday: <% moment(tp.file.title, "YYYY-MM-DD").format("dddd") %>
 aliases:
 location:
 mood:
-tag:
-  - Daily
 sleep:
 weight:
-prayer:
 meditation:
 exercise:
 study:
-stretch:
 ---
 <%*
 let titleDate = moment(tp.file.title);
@@ -36,13 +34,11 @@ titleDate.subtract(1, 'days');
 
 ```dataview
 table without id
-	mood + " #_/habits" AS "🌄",
-	prayer AS "🙏",
+	mood AS "🌄",
 	choice(meditation,"✅","❌") AS "🧘‍♂️",
-	choice(exercise,"✅","❌") AS "🏃‍♂️",
-	choice(study,"✅","❌") AS "📚",
-	choice(stretch,"✅","❌") AS "🤸"
-from "Journal/Daily"
+	choice(exercise,"✅","❌") AS "💪",
+	choice(study,"✅","❌") AS "📚"
+from "WorkLog/Paramita/Daily"
 where file.name = "<% moment(tp.file.title).format('YYYY-MM-DD') %>"
 ```
 ```dataviewjs
@@ -89,94 +85,26 @@ dv.paragraph(text);
 
 ![[WorkLog/Paramita/Weekly/<%moment(tp.file.title).format("gggg-[W]WW")%>#Goals for this week:]]
 
-## What am I grateful for?
-1. Gratitude:: 
+> [!todo]- Tasks of today
 
-> [!todo]- Tasks of the day
->```todoist  
->name: '' 
->filter: "(!#Work) & due before: tomorrow"
->sorting:  
->- date  
->- priority  
->group: true  
->```
+ - [ ] 30 new words
+ - [ ] 
+ - [ ] 
 
-## Highlights of the day:
-1. Highlight:: 
+> [!tip] What am I grateful for? 
+> Things you are grateful for, things you feel happy about
 
-## What did I learn today?
-1. Learning:: 
+-  Gratitude:: 
 
-## What good have I done today?
-1. Good:: 
+> [!tip] Unhappy of the day?
+> What makes you unhappy today
 
-## What excited or drained me?
-1. Exciting::
-2. Draining:: 
-```dataviewjs
-// List of kindle highlights
-let kindles = [];
+- 
 
-// Extract kindles from pages that have them
-dv.pages()
-	.where(page => page.kindle)
-	.forEach(page => {
-		dv.array(page.kindle)
-			.forEach(kindle => {
-				kindles.push({
-					message: kindle,
-					page: page
-				});
-				})});
+> [!tip] What is your inner thoughts today? 
+> Today's inner thoughts
 
-// 如果没有任何 kindle highlight，给出默认提示
-if (kindles.length === 0) {
-	dv.paragraph("*Kindle highlight:* No highlights found.");
-} else {
-	let kindlehighlight = kindles[Math.floor(Math.random() * kindles.length)];
-	dv.paragraph("*Kindle highlight:* " + kindlehighlight.message + " (" + kindlehighlight.page.file.link + ")");
-}
-
-dv.paragraph("*Kindle highlight:* " + kindlehighlight.message + " (" + kindlehighlight.page.file.link + ")");
-```
-```dataviewjs
-// List of podcast highlights
-let podcasts = [];
-
-// Extract kindles from pages that have them
-dv.pages()
-	.where(page => page.podcast)
-	.forEach(page => {
-		dv.array(page.podcast)
-			.forEach(podcast => {
-				podcasts.push({
-					message: podcast,
-					page: page
-				});
-				})});
-
-
-let podcasthighlight = podcasts[Math.floor(Math.random()*podcasts.length)] 
-
-dv.paragraph("*Podcast highlight:* " + podcasthighlight.message + " (" + podcasthighlight.page.file.link + ")");
-```
-#### Random notes
-```dataviewjs
-const noOfNotes = 3
-
-app.vault.getFiles()
-const files = app.vault.getFiles().filter(f => !f.path.includes("Journal") && !f.path.includes("Templates") && !f.path.includes("textgenerator") && !f.path.includes("Assets"))
-const random = Math.floor(Math.random() * (files.length - 1))
-const randomNote = files[random]
-
-for (let i = 0; i < noOfNotes; i++) {
-  const random = Math.floor(Math.random() * 
-                            (files.length - 1))
-  const randomNote = files[random] 
-  dv.paragraph('[[' + randomNote.basename + ']]')
-  }
-```
+- Learning:: 
 
 > [!note]- Files created on this day
 >```dataview  

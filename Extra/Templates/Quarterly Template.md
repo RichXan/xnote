@@ -1,6 +1,4 @@
 <%*
-await tp.file.move(`Journal/Quarterly/${tp.file.title}`);
-
 let quarter = moment(tp.file.title, 'YYYY-[Q]Q');
 
 // # 2023 Q1

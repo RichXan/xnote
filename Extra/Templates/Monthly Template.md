@@ -1,6 +1,4 @@
 <%*
-await tp.file.move(`Journal/Monthly/${tp.file.title}`);
-
 let month = moment(tp.file.title);
 
 // # 2023 January
@@ -30,11 +28,17 @@ do {
 month.subtract(1, 'weeks');
 %>
 
----
 
+---
+## Goals for this month:
+1. 
+2. 
+
+---
+## Overview
 ```dataview
 TABLE aliases
-FROM "Journal"
+FROM "WorkLog/Paramita"
 WHERE aliases != null
 AND file.day.year = number(substring(this.file.name, 0, 4))
 AND dateformat(date(file.name), "yyyy-MM") = replace(this.file.name, "M", "")
@@ -45,7 +49,7 @@ SORT file.day
 
 ```dataview
 TABLE WITHOUT ID file.day.weekyear AS Week, learning
-FROM "Journal/Daily"
+FROM "WorkLog/Paramita/Daily"
 WHERE learning != null
 AND file.day.year = number(substring(this.file.name, 0, 4))
 AND dateformat(date(file.name), "yyyy-MM") = replace(this.file.name, "M", "")
@@ -54,7 +58,7 @@ SORT file.day
 
 ```dataview
 TABLE WITHOUT ID file.day.weekyear AS Week, highlight
-FROM "Journal/Daily"
+FROM "WorkLog/Paramita/Daily"
 WHERE highlight != null
 AND file.day.year = number(substring(this.file.name, 0, 4))
 AND dateformat(date(file.name), "yyyy-MM") = replace(this.file.name, "M", "")

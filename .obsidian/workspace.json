@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "b98895275578c63c",
+        "id": "bb1443273ebe3a6d",
         "type": "tabs",
         "children": [
           {
-            "id": "0fe3818f4b307906",
+            "id": "e4b79c69ba75a26b",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Extra/Templates/Daily Template.md",
+                "file": "WorkLog/Paramita/Monthly/2025-10.md",
                 "mode": "source",
-                "source": true
+                "source": false
               },
               "icon": "lucide-file",
-              "title": "Daily Template"
+              "title": "2025-10"
             }
           }
         ]
@@ -53,8 +53,8 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "xblog",
-                "matchingCase": false,
+                "query": "🙏",
+                "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
                 "extraContext": false,
@@ -113,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Extra/Templates/Daily Template.md",
+                "file": "WorkLog/Paramita/Monthly/2025-10.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Daily Template"
+              "title": "Outgoing links from 2025-10"
             }
           },
           {
@@ -142,13 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Extra/Templates/Daily Template.md",
+                "file": "WorkLog/Paramita/Monthly/2025-10.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Daily Template"
+              "title": "Outline of 2025-10"
             }
           },
           {
@@ -166,58 +166,62 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 340.5
   },
   "left-ribbon": {
     "hiddenItems": {
+      "daily-notes:Open today's daily note": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
       "bases:Create new base": false,
+      "templater-obsidian:Templater": false,
       "periodic-notes:Open today": false,
-      "templater-obsidian:Templater": false
+      "copilot:Open Copilot Chat": false
     }
   },
-  "active": "0fe3818f4b307906",
+  "active": "e4b79c69ba75a26b",
   "lastOpenFiles": [
-    "WorkLog/Paramita/Daily/2025-10-13.md",
-    "Extra/Templates/Daily Template.md",
-    "Journal/Daily/2025-10-13.md",
-    "Journal/Daily",
-    "Journal",
-    "Extra/Templates/daily-template.md",
-    "Extra/Templates/filename_template.md",
-    "Extra/Templates/Zotero template.md",
-    "Extra/Templates/Default 1.md",
-    "Extra/Templates/week-template.md",
-    "Extra/Templates/Yearly Template.md",
+    "WorkLog/Paramita/Weekly/2025-W42.md",
+    "WorkLog/Paramita/Yearly/2025.md",
+    "WorkLog/Paramita/Daily/2025-10-14.md",
+    "WorkLog/Paramita/Monthly/2025-10.md",
+    "Extra/Templates/Monthly Template.md",
     "Extra/Templates/Quarterly Template.md",
-    "README.md",
+    "Extra/Templates/Yearly Template.md",
+    "Extra/Templates/Weekly Template.md",
+    "Extra/Templates/Daily Template.md",
+    "Extra/Templates/README.md",
+    "WorkLog/Paramita/Quarterly/2025-Q4.md",
+    "KnowledgeSystem/test.md",
+    "Extra/Templates/filename_template.md",
+    "Extra/Templates/Default 1.md",
+    "Extra/Templates/Zotero template.md",
+    "copilot/copilot-custom-prompts/Rewrite as tweet thread.md",
+    "copilot/copilot-custom-prompts/Rewrite as tweet.md",
+    "copilot/copilot-custom-prompts/Remove URLs.md",
+    "copilot/copilot-custom-prompts/Generate glossary.md",
+    "copilot/copilot-custom-prompts/Generate table of contents.md",
+    "copilot/copilot-custom-prompts/Make longer.md",
+    "copilot/copilot-custom-prompts/Make shorter.md",
+    "copilot/copilot-custom-prompts/Emojify.md",
+    "copilot/copilot-custom-prompts/Explain like I am 5.md",
+    "copilot/copilot-custom-prompts/Simplify.md",
+    "copilot/copilot-custom-prompts/Summarize.md",
+    "copilot/copilot-custom-prompts",
+    "copilot",
+    "Journal/Monthly",
+    "Journal",
+    "WorkLog/Paramita/Quarterly",
+    "Journal/Daily",
     "logo.png",
     "8d21cffd94f23a1051c1f01d5ffc1203.png",
-    "contributors-shield.md",
-    "' + titleDate.add(1, 'days').format('YYYY-MM-DD') + '.md",
-    "' + titleDate.format('gggg-[W]WW') + '.md",
-    "Extra/Templates/Weekly Template.md",
-    "Extra/Templates/Monthly Template.md",
     "Extra/mulfok-periodic-note-templates",
-    "KnowledgeSystem/test.md",
-    "WorkLog/Paramita/2025/Daily/2025-10-13.md",
     "WorkLog/Paramita/2025/Daily",
     "WorkLog/Paramita/2025",
     "WorkLog/Paramita/Yearly",
-    "WorkLog/Paramita/Monthly",
-    "WorkLog/Paramita/Weekly",
-    "WorkLog/Paramita/2025-10-13.md",
-    "WorkLog/Paramita/Daily",
-    "WorkLog/Paramita/2025-W42.md",
-    "2025-10.md",
-    "Extra/Templates",
-    "2025-10-13.md",
-    "WorkLog/daily-template.canvas",
-    "create a link.md",
-    "Welcome.md"
+    "WorkLog/daily-template.canvas"
   ]
 }
