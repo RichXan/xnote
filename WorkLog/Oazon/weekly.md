@@ -277,6 +277,25 @@ Mocreo
     - 配合测试联调验证alexa、aws sms相关功能
 
 
+# 2025.10.13-2025.10.17
+- MOCREO
+	- 版本发布及bug修复
+		- 排查设备型号绑定时与备案时不一致问题
+		- 修复refresh事件冷却间隔不生效问题
+		- 修复NS1/NS2重复上报trigger无法beep问题
+		- 修复设备触发告警没有弹窗问题
+		- 修复版本确认时获取资产信息失败问题
+		- 排查dismiss成功后无成功指定推送问题
+		- 修复版本确认时获取资产信息失败问题
+		- 修复修改邮箱后，OwerEmail 参数未同步问题
+		- 更新用户邮箱时同步更新membership中的email
+		- 添加更新用户邮箱后，通知用户所有资产下的设备
+	- 添加更新规则时去重下发通知机制
+	- 新增添加用户修改密码/重置密码/修改邮箱后使该用户下所有token失效功能
+	- 添加选择多hub beep时的过滤机制以避免重复发送命令
+	- 设计sms即将达到限额通知的方案
+
+
 # 本周工作
 - Mocreo
     - 邮件html模板内容调整及测试联调验证
@@ -302,22 +321,10 @@ Mocreo
 - [x] LW1首次setup进行按键的通知推送内容修改
     - setup/scan 扫码绑定接口添加 redis key三小时缓存，在上报 {"type": "EVENT", "deviceId": "0030AE1118301F00", "data": {"eventType": "refresh", "params": {}}}  的信息中判断是否存在首次上报的数据，如果是首次绑定的话就发送deviceInit首次绑定的消息，否则发送test notification消息
 - [x] 在切换资产后，需要通知Hub重新获取一次规则
-
-- 添加已知晓接口，用户更新到1.3.0之后，将用户所有资产下所有设备的告警规则rule的condition.all中的params.refreshTime若为600修改为0。
-
-- 短信通知功能开发
-- LW1告警短信发送
-
-- dismiss链接点击后下发给该node的所有代理hub和选择beep的hub
+- [x] 添加已知晓接口，用户更新到1.3.0之后，将用户所有资产下所有设备的告警规则rule的condition.all中的params.refreshTime若为600修改为0。
+- [ ] 设计执行下发重试机制
 
 
-- 水位对应映射关系，过滤水位传入的max,min聚合参数，只返回水位对应的映射关系
-\-1(顶部漏水)
-0 (无水)
-1\~n(底部漏水，漏水严重性)【1，2，3，4】
-2，是低水位漏水
-3，是中水位漏水
-4，高水位漏水
 
 
 - 触发告警时创建会话信息，在通知中返回会话id
@@ -328,13 +335,6 @@ Mocreo
 - 设备获取command添加超时删除command不在下发处理(待测试什么情况下会出现)
 
 - createCommandFromApp时如果为dismiss，创建指令的时候, 如果传入的params.repeat为true将rule.attributes.alertDismissTime设置为当前时间+一个小时的时间戳。如果传入的params.repeat为false将rule.attributes.alertDismissTime设置为forever。在收到设备上报的告警恢复的消息时，将rule.attributes.alertDismissTime设置为空。
-
-- 用户刚注册的这封邮件需要调整:
-1. 如果用户填写了个人信息，就不要用 Hello friend 了。
-2. 介绍了 Youtube 设置视频，但是跳转链接呢?
-3. FAQ 引导页面最好是去往一个目录页面，而不是 H5-Lite
-
-- 告知测试1.3.0功能的测试点，要在周五前上，除了短信功能。
 
 
 
