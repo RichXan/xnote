@@ -106,6 +106,40 @@ for(let page of dv.pages('"WorkLog/Paramita/Daily"').where(p=>p.mood)){
 renderHeatmapCalendar(this.container, calendarData)
 ```
 
+```dataviewjs  
+dv.span("**English Word 📕**")  
+  
+// Extract the year from the current file name 
+const currentYear = dv.current().file.name.match(/\d{4}/)?.[0]; 
+// Filter pages to include only those that match the current year
+const pages = dv.pages('"WorkLog/Paramita/Daily"') .where(p => p.file.name.includes(currentYear)) .sort(p => p.file.name); 
+const dates = pages.map(p => p.file.name).values  
+const words = pages.map(p => p.words).values  
+  
+const chartData = {  
+type: 'line',  
+data: {  
+labels: dates,  
+datasets: [{  
+label: 'Words',  
+data: words,  
+backgroundColor: [  
+'rgba(53, 252, 167, 1)'  
+],  
+borderColor: [  
+'rgba(138, 102, 204, 0.8)'  
+],
+chartColor: ['rgba(255, 255, 255, 1)'],
+borderWidth: 1.5,  
+spanGaps: true,  
+}],  
+},  
+};  
+  
+window.renderChart(chartData, this.container)  
+```
+
+
 ```dataviewjs
 dv.span("** Meditation 🧘‍♂️ **")
 

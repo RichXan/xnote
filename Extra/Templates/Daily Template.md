@@ -11,6 +11,7 @@ weight:
 meditation:
 exercise:
 study:
+words: "0"
 ---
 <%*
 let titleDate = moment(tp.file.title);
@@ -100,7 +101,9 @@ let learninggreeting = learnings[Math.floor(Math.random()*learnings.length)]
 
 let text = "";
 if (gratitudegreeting) text += `*Practice gratitude:* ${gratitudegreeting.message} (${gratitudegreeting.page.file.link})<br>`;
-if (learninggreeting) text += `*A random learning:* ${learninggreeting.message} (${learninggreeting.page.file.link})`;
+if (learninggreeting) text += `*A random learning:* 
+
+${learninggreeting.message} (${learninggreeting.page.file.link})`;
 if (!text) text = "No gratitude or learning entries found yet.";
 
 dv.paragraph(text);
