@@ -271,15 +271,13 @@ Mocreo
 
 # 2025.10.13-2025.10.17
 - MOCREO
-    - dismiss功能逻辑调整（需要兼容旧固件 在分级规则触发之后还会重新上报trigger）
-    - aws 短信额度低通知功能
-    - LD1 门锁状态支持
-    - 配合测试联调验证alexa、aws sms相关功能
-
-
-# 2025.10.13-2025.10.17
-- MOCREO
+	- aws sms功能生产发布及验证
+	- dismiss功能逻辑调整、优化及联调验证
+	- 添加更新规则时去重下发通知机制
+	- 新增添加用户修改密码/重置密码/修改邮箱后使该用户下所有token失效功能
+	- 添加选择多hub beep时的过滤机制以避免规则触发/恢复时重复发送命令
 	- 版本发布及bug修复
+		- 排查修复sms短信发送重复问题
 		- 排查设备型号绑定时与备案时不一致问题
 		- 修复refresh事件冷却间隔不生效问题
 		- 修复NS1/NS2重复上报trigger无法beep问题
@@ -290,31 +288,16 @@ Mocreo
 		- 修复修改邮箱后，OwerEmail 参数未同步问题
 		- 更新用户邮箱时同步更新membership中的email
 		- 添加更新用户邮箱后，通知用户所有资产下的设备
-	- 添加更新规则时去重下发通知机制
-	- 新增添加用户修改密码/重置密码/修改邮箱后使该用户下所有token失效功能
-	- 添加选择多hub beep时的过滤机制以避免重复发送命令
-	- 设计sms即将达到限额通知的方案
+
+# 2025.10.20-2025.10.24
+- MOCREO
+	- refreshTime重置功能调整为hub上报版本时更新
+	- aws sms即将达到限额通知的方案设计及功能开发
+	- dismiss功能调整及文档整理
+    - LD1 门锁状态支持
+    - 联调验证alexa、alexa相关内容nginx部署
 
 
-# 本周工作
-- Mocreo
-    - 邮件html模板内容调整及测试联调验证
-    - Stoplight Elements部署搭建，openapi文档整理
-    - dismiss功能完善及验证
-    - app iot server对接联调及问题排查处理
-    - Alexa联调对接
-        - 联调对接App-to-App Account Linking功能, 并验证iOS与Android平台的跳转流程
-        - Alexa Skill功能迭代发布 >>> 新功能需要等MOCREO v1.3.0版本部署上线后发布
-
-    - [] odoo相关bug修复
-    - [x] 补充LoRa设备信号强度转换百分比方法 >>> Loki
-    - [x] 公开api 文档补充，上线生产环境 >>> Loki
-    - [] 短信通知
-    - [] 修改规则结构、支持ios重要推送通知 >>> Loki
-    - [x] 修改邮箱
-    - [] Dismiss 成功后推送通知 >>> Loki 
-    - [x] NS1/NS2 蜂鸣器控制 >>> Loki 
-    - [x] H3 继电器控制
 
 # 待办事项
 - [x] 整理归纳通知需要下发到哪个hub上？（代理hub、关联hub、所有hub）
