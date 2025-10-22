@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "WorkLog/Paramita/Daily/2025-10-22.md",
+                "file": "WorkLog/Oazon/daily.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2025-10-22"
+              "title": "daily"
             }
           }
         ],
@@ -213,14 +213,15 @@
   },
   "active": "b6eb4f89d1f79958",
   "lastOpenFiles": [
-    "WorkLog/Paramita/Weekly/2025-W43.md",
+    "WorkLog/Oazon/swot.md",
     "WorkLog/Paramita/Daily/2025-10-22.md",
     "WorkLog/Paramita/Daily/2025-10-21.md",
+    "WorkLog/Paramita/Weekly/2025-W43.md",
+    "WorkLog/Paramita/Weekly/2025-W42.md",
+    "WorkLog/Paramita/Monthly/2025-10.md",
     "WorkLog/Oazon/daily.md",
     "WorkLog/Oazon/weekly.md",
-    "WorkLog/Oazon/swot.md",
     "WorkLog/Paramita/Daily/2025-10-20.md",
-    "WorkLog/Paramita/Weekly/2025-W42.md",
     "WorkLog/Paramita/Daily/2025-10-19.md",
     "WorkLog/Paramita/Daily/2025-10-18.md",
     "WorkLog/Paramita/Daily/2025-10-17.md",
@@ -235,7 +236,6 @@
     "Extra/Templates/Yearly Template.md",
     "Extra/Templates/Zotero template.md",
     "WorkLog/Paramita/Yearly/2025.md",
-    "WorkLog/Paramita/Monthly/2025-10.md",
     "WorkLog/Paramita/Quarterly/2025-Q4.md",
     "Extra/Templates/Daily Template.md",
     "Extra/Templates/Default 1.md",
