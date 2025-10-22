@@ -296,6 +296,7 @@ Mocreo
 	- dismiss功能调整及文档整理
     - LD1 门锁状态支持
     - 联调验证alexa、alexa相关内容nginx部署
+    - 短信一小时20封
 
 
 
