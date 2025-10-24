@@ -298,6 +298,33 @@ Mocreo
     - 联调验证alexa、alexa相关内容nginx部署
     - 短信一小时20封
 
+## 上周任务
+- refreshTime重置功能调整为hub上报版本时更新
+- alexa相关内容nginx部署及skill发布更新
+- dismiss功能调整及文档整理
+- 白牌功能需求整理及设计思路澄清
+- SW3和H6Lite 设备描述文件内容更新
+- 添加LD1的door_status状态支持
+- 实现通过“禁止同一账号同时登录/注册”实现设备/用户隔离
+- alexa skill问题排查及用户认证功能关闭
+- 添加app应用配置信息
+- iot-redis-apiproxy服务器天气获取代理服务器请求超时排查
+- 天气代理服务器请求耗时长原因排查
+- 天气代理服务器并发压力测试
+- 天气代理服务器并发请求耗时问题排查
+- 天气代理服务器并发请求redis竞争问题处理
+
+10.24
+- 修改weather-api-apiproxy服务
+	- 使用Gunicorn作为WSGI服务器
+	- 配置多个worker进程和线程，将weather-api-apiproxy服务修改为多线程模式。
+	- 将获取天气接口从直连请求修改为代理请求
+	- 排除访问超时的天气api代理服务
+- 排查定时导出任务不生效问题
+- 修改白牌邮件内容
+- calendarloop上传视频接口开发
+- work with alexa认证信息填写
+
 
 
 # 待办事项
@@ -307,6 +334,7 @@ Mocreo
 - [x] 在切换资产后，需要通知Hub重新获取一次规则
 - [x] 添加已知晓接口，用户更新到1.3.0之后，将用户所有资产下所有设备的告警规则rule的condition.all中的params.refreshTime若为600修改为0。
 - [ ] 设计执行下发重试机制
+- [ ] 短信一小时20封
 
 
 

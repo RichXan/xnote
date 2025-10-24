@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "WorkLog/Oazon/daily.md",
+                "file": "WorkLog/Oazon/weekly.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "daily"
+              "title": "weekly"
             }
           }
         ],
@@ -213,11 +213,11 @@
   },
   "active": "b6eb4f89d1f79958",
   "lastOpenFiles": [
+    "WorkLog/Oazon/swot.md",
+    "WorkLog/Oazon/daily.md",
     "WorkLog/Oazon/weekly.md",
     "WorkLog/Paramita/Weekly/2025-W43.md",
     "WorkLog/Paramita/Daily/2025-10-23.md",
-    "WorkLog/Oazon/daily.md",
-    "WorkLog/Oazon/swot.md",
     "WorkLog/Paramita/Daily/2025-10-22.md",
     "WorkLog/Paramita/Daily/2025-10-21.md",
     "WorkLog/Paramita/Weekly/2025-W42.md",

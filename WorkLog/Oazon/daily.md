@@ -730,5 +730,6 @@ MOCREO
 - 排查定时导出任务不生效问题
 - 修改白牌邮件内容
 - calendarloop上传视频接口开发
+- work with alexa认证信息填写
 
 - 重复邮件处理
